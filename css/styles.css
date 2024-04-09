@@ -2,6 +2,7 @@
 --bcg-preimery:#000000;
 --bcg-secondary:#181823;
 --c-light-grey:#DEECF9;
+--c-grey:#8491A0;
 --c-dark-grey:#C7E0F4;
 --c-text:#ffffff;
 --c-text-tr:#ffffff5A;
@@ -10,6 +11,7 @@
 --c-pink-accent:#E95D90;
 --c-peach-accent:#FFF3E4;
 --c-violet-accent:#FBE4FF;
+--c-blue-accent:#609BFF;
 }
 
 
@@ -73,6 +75,9 @@ body {
     border: 0;
     clip: rect(0 0 0 0);
   }
+
+  /* header */
+
   .header {
     max-width: 360px;
     margin: 0 auto;
@@ -127,6 +132,66 @@ body {
     font-size: 18px;
     line-height: 1.5;
   }
+  /* END header */
+
+  /* Section-experience */
+  .section-experience {
+    max-width: 360px;
+    padding: 48px 0;
+    margin: 0 auto;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .heading-text {
+   text-transform: uppercase;
+   color: var(--c-grey);
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 1.5;
+   margin-bottom: 8px;
+  }
+  .title-secondary { 
+    font-size: 32px;
+    line-height: 1.22;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .experiece-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .experiece-item {
+    flex-basis: 100%;
+  }
+  .experiece-number {
+    color: var(--c-grey);
+    font-size: 116px;
+    line-height: 1.2;
+  }
+  .title-tertiary {
+    font-size: 24px;
+    line-height: 1.22;
+    margin-bottom: 16px;
+    letter-spacing: 0.01em;
+  }
+  .green-accent {
+    color: var(--c-green-accent);
+  }
+  .blue-accent {
+    color: var(--c-blue-accent);
+  }
+  .pink-accent {
+    color: var(--c-pink-accent);
+  }
+  .experience-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--c-grey);
+  }
+  /* END Section-experience */
 
   @media screen and (min-width: 767.8px) {
     .header {
@@ -182,6 +247,23 @@ body {
       font-size: 56px;
       margin-bottom: 32px;
     }
+
+
+    .section-experience {
+      max-width: 768px;
+      padding: 80px 0;
+    }
+    .container {
+      padding: 0 40px;
+    }
+    .title-secondary { 
+      font-size: 55px;
+      line-height: 1.2;
+    }
+    .experiece-item {
+      flex-basis: calc((100% - 80px) / 3);
+    }
+
   }
 
   @media screen and (min-width: 1439.8px) {
@@ -207,6 +289,24 @@ body {
     .hero-title {
       font-size: 78px;
       margin-bottom: 32px;
+    }
+
+
+    .section-experience {
+      max-width: 1440px;
+      padding: 120px 0;
+    }
+    .container {
+      padding: 0 72px;
+    }
+    .title-secondary {
+      width: 690px;
+    }
+    .experiece-list {
+      gap: 24px;
+    }
+    .experiece-item {
+      flex-basis: calc((100% - 48px) / 3);
     }
 
   }
