@@ -16,6 +16,58 @@
     <title>Robin</title>
 </head>
 <body>
-    
+    <header class="header">
+        <div class="header-inner">
+            <nav class="nav">
+                <a class="logo" href="./index.html">
+                    <img class="logo-img" src="./images/logo.png" alt="logo">
+                </a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photography</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <svg class="menu-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+        </div>
+        <section class="section-hero">
+           <div class="hero-wraper">
+            <picture>
+                <source media="(min-width: 1440px)" 
+                srcset="./images/hero/desk-hero.jpg 1x, ./images/hero/desk-hero@2x.jpg 2x" />
+
+                <source media="(min-width: 768px)" 
+                srcset="./images/hero/tab-hero.jpg 1x, ./images/hero/tab-hero@2x.jpg 2x" />
+                
+                <source media="(max-width: 767.8px)" 
+                srcset="./images/hero/mob-hero.jpg 1x, ./images/hero/mob-hero@2x.jpg 2x" />
+                
+                <img class="hero-img" src="./images/hero/mob-hero.jpg" alt="Robin Williams"/> 
+            </picture>
+            <div class="container-hero">
+              <h2 class="hero-title">I’m Robin Williams.<br />
+                  A Product Designer
+                  <span class="hero-accent">based in Italy.</span></h1> 
+                  <p class="hero-text">I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
+            </div>
+           </div>
+          </section>
+    </header>
+    <main>
+       <section>
+       </section>
+    </main>
+    <footer></footer>
 </body>
 </html>
