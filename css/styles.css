@@ -5,6 +5,8 @@
 --c-grey:#8491A0;
 --c-dark-grey:#C7E0F4;
 --c-text:#ffffff;
+--c-text-dark-grey:#5B6876;
+--c-text-secondary:#000000;
 --c-text-tr:#ffffff5A;
 --c-blue:#5221E6;
 --c-green-accent:#3CC74E;
@@ -59,6 +61,7 @@ body {
     display: block;
     width: 100%;
     height: auto;
+    object-fit: cover; 
   }
   
   html {
@@ -174,7 +177,7 @@ body {
     font-size: 24px;
     line-height: 1.22;
     margin-bottom: 16px;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.02em;
   }
   .green-accent {
     color: var(--c-green-accent);
@@ -192,6 +195,42 @@ body {
     color: var(--c-grey);
   }
   /* END Section-experience */
+
+  /* Section-philosophy */
+  .philosophy {
+    max-width: 360px;
+    margin: 0 auto;
+    background-color: var(--c-peach-accent);
+    color: var(--c-text-secondary);
+  }
+  .philosophy-kontent {
+    padding: 48px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+
+  .title-light {
+    margin-bottom: 24px;
+  }
+  .philosophy-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--c-text-dark-grey);
+    margin-bottom: 90px;
+  }
+  .philosophy-link {
+    border-bottom: 1px solid var(--c-text-dark-grey);
+    cursor: pointer;
+    transition: color 0.4s ease-in-out, border-bottom 0.4s ease-in-out;
+  }
+  .philosophy-link:hover {
+    border-bottom: 1px solid var(--c-text-secondary);
+    color: var(--c-text-dark-grey);
+  }
+  /* END Section-philosophy */
+
 
   @media screen and (min-width: 767.8px) {
     .header {
@@ -264,6 +303,27 @@ body {
       flex-basis: calc((100% - 80px) / 3);
     }
 
+
+    .philosophy {
+      max-width: 768px;
+    }
+    .philosophy-kontent {
+      padding: 80px 40px;
+    }
+    .philosophy-wrap {
+      display: flex;
+    }
+    .philosophy-kontent {
+      flex-basis: calc(100% / 2);
+    }
+    .philosophy-photo {
+      flex-basis: calc(100% / 2); 
+    }
+    
+    .philosophy-text {
+      margin-bottom: 68px;
+    }
+
   }
 
   @media screen and (min-width: 1439.8px) {
@@ -307,6 +367,22 @@ body {
     }
     .experiece-item {
       flex-basis: calc((100% - 48px) / 3);
+    }
+    
+
+
+    .philosophy {
+      max-width: 1440px;
+    }
+    .philosophy-kontent {
+      padding: 120px 72px;
+    }
+    .title-light {
+      width: 576px;
+    }
+    .philosophy-text {
+      width: 576px;
+      margin-bottom: 134px;
     }
 
   }
