@@ -302,6 +302,50 @@ body {
 
   /* END Brands-section */
 
+  /* Projects-section */
+
+  .projects {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 64px 0;
+  }
+  .project-title {
+    font-size: 32px;
+    line-height: 1.22;
+    font-weight: 700;
+    margin-bottom: 80px;
+  }
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+  .project-card {
+    flex-basis: 100%;
+  }
+  .project-item {
+    background-color: var(--bcg-secondary);
+  }
+  .project-inner {
+    padding: 40px 32px;
+  }
+  .title-project {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 13px;
+  }
+  .project-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--c-text-dark-grey);
+  }
+  .project-wrap {
+    display: none;
+  }
+
+  /* END Projects-section */
+
   @media screen and (min-width: 767.8px) {
     .header {
       max-width: 768px;
@@ -421,6 +465,27 @@ body {
   .brands {
     max-width: 768px;
   }
+  .project-title {
+    font-size: 55px;
+    line-height: 1.22;
+  }
+
+  .projects {
+    max-width: 768px;
+    padding: 80px 0;
+  }
+  .title-project {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 13px;
+  }
+  .project-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--c-text-dark-grey);
+  }
+  
   
   }
 
@@ -504,6 +569,51 @@ body {
     }
     .brand {
       flex-basis: calc(100% / 6);
+    }
+
+    .projects {
+      max-width: 1440px;
+      padding: 120px 0 0;
+    }
+    
+    .project-title {
+      width: 590px;
+      display: inline-block;
+    }
+
+    .project-text {
+      display: inline-block;
+    }
+    .heading-text {
+     width: 590px;
+    }
+    .project-list {
+      gap: 24px;
+    }
+
+    .project-card {
+      flex-basis: calc((100% - 24px) / 2);
+    }
+    .project-relativ {
+      position: relative;
+      top: -244px;
+    }
+    .project-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 24px 32px;
+      border: 1px solid var(--c-blue);
+      margin-top: 90px;
+      width: 248px;
+      margin: 90px auto 0;
+    }
+
+    .project-link {
+      font-size: 18px;
+      line-height: 1.5;
+      font-weight: 700;
+      text-transform: uppercase;
     }
 
   }
