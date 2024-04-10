@@ -59,7 +59,6 @@ body {
   
   img {
     display: block;
-    width: 100%;
     height: auto;
     object-fit: cover; 
   }
@@ -277,6 +276,32 @@ body {
 
   /* END Skills-section */
 
+
+  /* Brands-section */
+
+  .brands {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+  .brands-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .brand {
+    flex-basis: calc(100% / 2);
+  }
+  .brand-item {
+    min-width: 180px;
+    min-height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--bcg-secondary);
+  }
+
+
+  /* END Brands-section */
+
   @media screen and (min-width: 767.8px) {
     .header {
       max-width: 768px;
@@ -392,6 +417,11 @@ body {
       padding-bottom: 0px;
   }
 
+
+  .brands {
+    max-width: 768px;
+  }
+  
   }
 
   @media screen and (min-width: 1439.8px) {
@@ -466,6 +496,14 @@ body {
     }
     .skills-inner {
       flex-basis: calc((100% - 24px) / 3 * 2);
+    }
+
+
+    .brands {
+      max-width: 1440px;
+    }
+    .brand {
+      flex-basis: calc(100% / 6);
     }
 
   }
