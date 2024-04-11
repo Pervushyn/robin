@@ -396,6 +396,61 @@ body {
 
   /* END Dribbble-section */
 
+
+  /* About my section */
+
+  .about-my-section {
+    max-width: 360px;
+    margin: 0 auto;
+    padding: 48px 0;
+  }
+  .about-my-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+  .title-about-my {
+    font-size: 32px;
+    line-height: 1.22;
+    font-weight: 700;
+    margin-bottom: 16px;
+  }
+  .text-about-my {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--c-grey);
+    margin-bottom: 40px;
+  }
+  .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+  .about-card {
+    width: 100%;
+  }
+  .about-card-content {
+    padding: 32px;
+    border: 1px solid var(--c-text-dark-grey);
+  }
+  .about-title {
+    margin-bottom: 64px;
+  }
+  .about-text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 4px;
+    color: var(--c-grey);
+  }
+  .about-text-normal {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--c-grey);
+  }
+
+  /* END About my section */
+
   @media screen and (min-width: 767.8px) {
     .header {
       max-width: 768px;
@@ -550,6 +605,24 @@ body {
     background-color: var(--bcg-secondary);
     margin-top: 120px;
   } 
+
+
+
+  .about-my-section {
+    max-width: 768px;
+    padding: 80px 0;
+  }
+  .about-my-inner {
+    gap: 24px;
+  }
+  .about-flex {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .title-about-my {
+    font-size: 55px;
+    line-height: 1.22;
+    margin-bottom: 24px;
+  }
   
   
   }
@@ -700,5 +773,18 @@ body {
       background-color: var(--bcg-secondary);
       margin-top: 120px;
     } 
+
+
+
+    .about-my-section {
+      max-width: 1440px;
+      padding: 120px 0;
+    }
+    .about-flex-title {
+      padding-right: 48px;
+    }
+    .about-card-content {
+      padding: 64px;
+    }
 
   }
