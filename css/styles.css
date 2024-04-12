@@ -490,6 +490,7 @@ body {
     padding: 12px 16px;
     border: 1px solid var(--c-blue);
     text-transform: uppercase;
+    cursor: pointer;
   }
   .preimery-btn {
     background-color: var(--c-blue);
@@ -501,6 +502,92 @@ body {
   }
 
   /* END Photo-section */
+
+  /* Form-section */
+
+  .form-section {
+  margin: 0 auto;
+  max-width: 360px;
+  padding: 48px 0;
+  }
+  .form-wraper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px;
+  }
+  .form-head {
+    flex-basis: 100%;
+  }
+  .contact-form {
+    flex-basis: 100%;
+  }
+  .form-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.22;
+    margin-bottom: 16px;
+  }
+  .form-text {
+    font-size: 18px;
+    line-height: 1.5;
+    color: var(--c-grey);
+  }
+  .label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .contact {
+    line-height: 1.5;
+    margin-bottom: 40px;
+  }
+  .form-name {
+    color: var(--c-text);
+    background-color: var(--bcg-secondary);
+    padding: 10px 20px;
+    width: 100%;
+    font-weight: normal;
+  }
+  textarea {
+    resize: none;
+    width: 100%;
+    height: 100px;
+    background-color: var(--bcg-secondary);
+    padding: 10px 20px;
+    color: var(--c-text);
+    font-weight: normal;
+    border: none;
+    outline: none;
+  }
+   textarea:focus {
+    border: 2px solid var(--c-blue);
+  }
+  input {
+     border: none;
+    outline: none;
+  }
+  input:focus {
+    border: 2px solid var(--c-blue);
+  }
+  .form-btn {
+    font-size: 18px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    background-color: var(--c-blue);
+    color: var(--c-text);
+    padding-top: 24px;
+    padding-bottom: 24px;
+    width: 100%;
+    cursor: pointer;
+    transition: color 1s ease-in-out, background-color 1s ease-in-out;
+  }
+  .form-btn:hover, .form-btn:focus {
+    background-color: var(--c-peach-accent);
+    color: var(--c-blue);
+  }
+
+
+
+  /* End Form-section */
 
   @media screen and (min-width: 767.8px) {
     .header {
@@ -711,7 +798,22 @@ body {
   }
   
 
-  
+  .form-section {
+  max-width: 768px;
+  padding: 80px 0;
+  }
+  .form-wraper {
+    gap: 24px;
+  }
+  .form-head {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .contact-form {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+  .form-title {
+    font-size: 55px;
+  }
   
   }
 
@@ -884,5 +986,16 @@ body {
       width: 588px;
     }
     
+
+
+    .form-section {
+  max-width: 1440px;
+  padding: 120px 0;
+  }
+  .container-form {
+    padding: 0 182px;
+  }
+
+
 
   }

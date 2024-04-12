@@ -1,497 +1,872 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" 
-    integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
-    
-    <title>Robin</title>
-</head>
-<body>
-    <header class="header">
-        <div class="header-inner">
-            <nav class="nav">
-                <a class="logo" href="./index.html">
-                    <img class="logo-img" src="./images/logo.png" alt="logo">
-                </a>
-                <ul class="nav-list">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Photography</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <svg class="menu-svg" width="24" height="24">
-                <use href="./images/icons.svg#icon-menu"></use>
-            </svg>
-        </div>
-        <section class="section-hero">
-           <div class="hero-wraper">
-            <picture>
-                <source media="(min-width: 1440px)" 
-                srcset="./images/hero/desk-hero.jpg 1x, ./images/hero/desk-hero@2x.jpg 2x" />
 
-                <source media="(min-width: 768px)" 
-                srcset="./images/hero/tab-hero.jpg 1x, ./images/hero/tab-hero@2x.jpg 2x" />
-                
-                <source media="(max-width: 767.8px)" 
-                srcset="./images/hero/mob-hero.jpg 1x, ./images/hero/mob-hero@2x.jpg 2x" />
-                
-                <img class="hero-img" src="./images/hero/mob-hero.jpg" alt="Robin Williams"/> 
-            </picture>
-            <div class="container-hero">
-              <h1 class="hero-title" id="about-us">I’m Robin Williams.<br />
-                  A Product Designer
-                  <span class="hero-accent">based in Italy.</span></h1> 
-                  <p class="hero-text">I’m probably the most passionate designer you will ever get to work with. If you have a great project that needs some amazing skills, I’m your guy.</p>
-            </div>
-           </div>
-          </section>
+    <title>Robin</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-inner">
+        <nav class="nav">
+          <a class="logo" href="./index.html">
+            <img class="logo-img" src="./images/logo.png" alt="logo" />
+          </a>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photography</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <svg class="menu-svg" width="24" height="24">
+          <use href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </div>
+      <section class="section-hero">
+        <div class="hero-wraper">
+          <picture>
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./images/hero/desk-hero.jpg    1x,
+                ./images/hero/desk-hero@2x.jpg 2x
+              "
+            />
+
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/hero/tab-hero.jpg    1x,
+                ./images/hero/tab-hero@2x.jpg 2x
+              "
+            />
+
+            <source
+              media="(max-width: 767.8px)"
+              srcset="
+                ./images/hero/mob-hero.jpg    1x,
+                ./images/hero/mob-hero@2x.jpg 2x
+              "
+            />
+
+            <img
+              class="hero-img"
+              src="./images/hero/mob-hero.jpg"
+              alt="Robin Williams"
+            />
+          </picture>
+          <div class="container-hero">
+            <h1 class="hero-title" id="about-us">
+              I’m Robin Williams.<br />
+              A Product Designer
+              <span class="hero-accent">based in Italy.</span>
+            </h1>
+            <p class="hero-text">
+              I’m probably the most passionate designer you will ever get to
+              work with. If you have a great project that needs some amazing
+              skills, I’m your guy.
+            </p>
+          </div>
+        </div>
+      </section>
     </header>
     <main>
-       <section class="section-experience" id="experience">
+      <section class="section-experience" id="experience">
         <div class="container">
-            <p class="heading-text">work experience</p>
-            <h2 class="title-secondary">Companies I have worked for in the past</h2>
-            <ul class="experiece-list">
-                <li class="experiece-item">
-                    <p class="experiece-number">01</p>
-                    <h3 class="title-tertiary"><span class="green-accent">Google</span>, Interaction Designer</h3>
-                    <p class="experience-text">I currently am the lead designer on the interaction design team for Google Play.</p>
-                </li>
-                <li class="experiece-item">
-                    <p class="experiece-number">02</p>
-                    <h3 class="title-tertiary"><span class="blue-accent">Facebook</span>, Product Designer</h3>
-                    <p class="experience-text">I’ve worked on a wide variety of internal tools for facebook over the past 6 years.</p>
-                </li>
-                <li class="experiece-item">
-                    <p class="experiece-number">03</p>
-                    <h3 class="title-tertiary"><span class="pink-accent">Dribbble</span>, Graphic Designer</h3>
-                    <p class="experience-text"> I started my design career with Dribbble. I was incharge of creating illustrations for the platform.</p>
-                </li>
-            </ul>
+          <p class="heading-text">work experience</p>
+          <h2 class="title-secondary">
+            Companies I have worked for in the past
+          </h2>
+          <ul class="experiece-list">
+            <li class="experiece-item">
+              <p class="experiece-number">01</p>
+              <h3 class="title-tertiary">
+                <span class="green-accent">Google</span>, Interaction Designer
+              </h3>
+              <p class="experience-text">
+                I currently am the lead designer on the interaction design team
+                for Google Play.
+              </p>
+            </li>
+            <li class="experiece-item">
+              <p class="experiece-number">02</p>
+              <h3 class="title-tertiary">
+                <span class="blue-accent">Facebook</span>, Product Designer
+              </h3>
+              <p class="experience-text">
+                I’ve worked on a wide variety of internal tools for facebook
+                over the past 6 years.
+              </p>
+            </li>
+            <li class="experiece-item">
+              <p class="experiece-number">03</p>
+              <h3 class="title-tertiary">
+                <span class="pink-accent">Dribbble</span>, Graphic Designer
+              </h3>
+              <p class="experience-text">
+                I started my design career with Dribbble. I was incharge of
+                creating illustrations for the platform.
+              </p>
+            </li>
+          </ul>
         </div>
-       </section>
+      </section>
 
-
-       <section class="philosophy">
+      <section class="philosophy">
         <div class="philosophy-wrap">
-            <div class="philosophy-kontent">
-                <h2 class="title-secondary title-light">Philosophy & values</h2>
-                <p class="philosophy-text">
-                    I think everyone wants the same thing - relationship with humanity, peace with the metaphysical, and experience with the universe. I try to grasp these things with my values: authenticity, creativity, & hospitality.
-                </p>
-                <a class="philosophy-link" href="#about-us">More about me</a>
-            </div>
-            <picture class="philosophy-photo">
-                <source media="(min-width: 1440px)"  
-                srcset="./images/philosophy/desk-glass-ball.jpg 1x, ./images/philosophy/desk-glass-ball@2x.jpg 2x" />
+          <div class="philosophy-kontent">
+            <h2 class="title-secondary title-light">Philosophy & values</h2>
+            <p class="philosophy-text">
+              I think everyone wants the same thing - relationship with
+              humanity, peace with the metaphysical, and experience with the
+              universe. I try to grasp these things with my values:
+              authenticity, creativity, & hospitality.
+            </p>
+            <a class="philosophy-link" href="#about-us">More about me</a>
+          </div>
+          <picture class="philosophy-photo">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./images/philosophy/desk-glass-ball.jpg    1x,
+                ./images/philosophy/desk-glass-ball@2x.jpg 2x
+              "
+            />
 
-                <source media="(min-width: 768px)" 
-                srcset="./images/philosophy/tab-glass-ball.jpg 1x, ./images/philosophy/tab-glass-ball@2x.jpg 2x" />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/philosophy/tab-glass-ball.jpg    1x,
+                ./images/philosophy/tab-glass-ball@2x.jpg 2x
+              "
+            />
 
-                <source media="(max-width: 767.8px)" 
-                srcset="./images/philosophy/mob-glass-ball.jpg 1x, ./images/philosophy/mob-glass-ball@2x.jpg 2x" />
+            <source
+              media="(max-width: 767.8px)"
+              srcset="
+                ./images/philosophy/mob-glass-ball.jpg    1x,
+                ./images/philosophy/mob-glass-ball@2x.jpg 2x
+              "
+            />
 
-                <img src="./images/philosophy/mob-glass-ball.jpg" alt="glass-ball" />
-            </picture>
+            <img
+              src="./images/philosophy/mob-glass-ball.jpg"
+              alt="glass-ball"
+            />
+          </picture>
         </div>
-       </section>
+      </section>
 
-       <section class="skills-section">
+      <section class="skills-section">
         <div class="container">
-            <div class="skills-wrap">
-               <div class="skills-advantages">
-                <h2 class="title-skills">Skillset</h2>
-                <p class="skills-text-advantages">With skills in over 4 different fields of design, I am the perfect person to hire when it comes to a full fledged project. Whatever your needs are, I can pretty much take on any challenge.</p>
-               </div>
-               <div class="skills-inner">
-                <ul class="skills-list">
-                    <li class="skill">
-                        <svg class="skills-icon" width="26" height="32">
-                            <use href="./images/icons.svg#icon-Vector"></use>
-                        </svg>
-                        <h3 class="title-tertiary-skill">Product Design</h3>
-                        <p class="experience-text">Working at Facebook has taught me a lot about how to understand users, solve problems and build great products.</p>
-                    </li>
-                    <li class="skill">
-                        <svg class="skills-icon" width="32" height="32">
-                            <use href="./images/icons.svg#icon-Group-20"></use>
-                        </svg>
-                        <h3 class="title-tertiary-skill">Visual Design</h3>
-                        <p class="experience-text">My experience at dribbble has helped me learn to develop the eye for design. Colors, typography, layout and the whole package.</p>
-                    </li>
-                    <li class="skill">
-                        <svg class="skills-icon" width="32" height="32">
-                            <use href="./images/icons.svg#icon-Group-62"></use>
-                        </svg>
-                        <h3 class="title-tertiary-skill">skills-list</h3>
-                        <p class="experience-text">I started my design journey with motion design in my college days. Motion is something that really fascinates me because of the flexibility of story telling. </p>
-                    </li>
-                    <li class="skill">
-                        <svg class="skills-icon" width="32" height="32">
-                            <use href="./images/icons.svg#icon-Frame-16"></use>
-                        </svg>
-                        <h3 class="title-tertiary-skill">Photography</h3>
-                        <p class="experience-text">Clicking pictures really brings out the creative in me. Phtography really makes you look and percieve things in a different way.</p>
-                    </li>
-                </ul>
-               </div>
+          <div class="skills-wrap">
+            <div class="skills-advantages">
+              <h2 class="title-skills">Skillset</h2>
+              <p class="skills-text-advantages">
+                With skills in over 4 different fields of design, I am the
+                perfect person to hire when it comes to a full fledged project.
+                Whatever your needs are, I can pretty much take on any
+                challenge.
+              </p>
+            </div>
+            <div class="skills-inner">
+              <ul class="skills-list">
+                <li class="skill">
+                  <svg class="skills-icon" width="26" height="32">
+                    <use href="./images/icons.svg#icon-Vector"></use>
+                  </svg>
+                  <h3 class="title-tertiary-skill">Product Design</h3>
+                  <p class="experience-text">
+                    Working at Facebook has taught me a lot about how to
+                    understand users, solve problems and build great products.
+                  </p>
+                </li>
+                <li class="skill">
+                  <svg class="skills-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-Group-20"></use>
+                  </svg>
+                  <h3 class="title-tertiary-skill">Visual Design</h3>
+                  <p class="experience-text">
+                    My experience at dribbble has helped me learn to develop the
+                    eye for design. Colors, typography, layout and the whole
+                    package.
+                  </p>
+                </li>
+                <li class="skill">
+                  <svg class="skills-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-Group-62"></use>
+                  </svg>
+                  <h3 class="title-tertiary-skill">skills-list</h3>
+                  <p class="experience-text">
+                    I started my design journey with motion design in my college
+                    days. Motion is something that really fascinates me because
+                    of the flexibility of story telling.
+                  </p>
+                </li>
+                <li class="skill">
+                  <svg class="skills-icon" width="32" height="32">
+                    <use href="./images/icons.svg#icon-Frame-16"></use>
+                  </svg>
+                  <h3 class="title-tertiary-skill">Photography</h3>
+                  <p class="experience-text">
+                    Clicking pictures really brings out the creative in me.
+                    Phtography really makes you look and percieve things in a
+                    different way.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        </div>
-       </section>
-         
-       <section class="brands">
+      </section>
+
+      <section class="brands">
         <h2 class="visually-hidden">Brands</h2>
         <ul class="brands-list">
-            <li class="brand">
-                <div class="brand-item">
-                    <img width="85" src="./images/brands/cbre.png" alt="brand">
-                </div>
-            </li>
-            <li class="brand">
-                <div class="brand-item">
-                    <img src="./images/brands/epiq.png" alt="brand">
-                </div>
-            </li>
-            <li class="brand">
-                <div class="brand-item">
-                    <img src="./images/brands/f.png" alt="brand">
-                </div>
-            </li>
-            <li class="brand">
-                <div class="brand-item">
-                    <img src="./images/brands/leaflet.png" alt="brand">
-                </div>
-            </li>
-            <li class="brand">
-                <div class="brand-item">
-                    <img src="./images/brands/PlaceforMom.png" alt="brand">
-                </div>
-            </li>
-            <li class="brand">
-                <div class="brand-item">
-                    <img src="./images/brands/M.png" alt="brand">
-                </div>
-            </li>
+          <li class="brand">
+            <div class="brand-item">
+              <img width="85" src="./images/brands/cbre.png" alt="brand" />
+            </div>
+          </li>
+          <li class="brand">
+            <div class="brand-item">
+              <img src="./images/brands/epiq.png" alt="brand" />
+            </div>
+          </li>
+          <li class="brand">
+            <div class="brand-item">
+              <img src="./images/brands/f.png" alt="brand" />
+            </div>
+          </li>
+          <li class="brand">
+            <div class="brand-item">
+              <img src="./images/brands/leaflet.png" alt="brand" />
+            </div>
+          </li>
+          <li class="brand">
+            <div class="brand-item">
+              <img src="./images/brands/PlaceforMom.png" alt="brand" />
+            </div>
+          </li>
+          <li class="brand">
+            <div class="brand-item">
+              <img src="./images/brands/M.png" alt="brand" />
+            </div>
+          </li>
         </ul>
-       </section>
+      </section>
 
-
-       <section class="projects">
+      <section class="projects">
         <div class="container">
-            <p class="heading-text">My projects</p>
-            <h2 class="project-title">Work that I’ve done for the past 8 years</h2>
-            <ul class="project-list">
-                <li class="project-card">
-                    <div class="project-item">
-                        <picture>
-                            
-                            <source media="(min-width: 1440px)" 
-                            srcset="./images/projects/desc/desc-comp.jpg 1x, ./images/projects/desc/desc-comp@2x.jpg 2x" />
+          <p class="heading-text">My projects</p>
+          <h2 class="project-title">
+            Work that I’ve done for the past 8 years
+          </h2>
+          <ul class="project-list">
+            <li class="project-card">
+              <div class="project-item">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/projects/desc/desc-comp.jpg    1x,
+                      ./images/projects/desc/desc-comp@2x.jpg 2x
+                    "
+                  />
 
-                            <source media="(min-width: 768px)" 
-                            srcset="./images/projects/tab/tab-comp.jpg 1x, ./images/projects/tab/tab-comp@2x.jpg 2x" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/tab-comp.jpg    1x,
+                      ./images/projects/tab/tab-comp@2x.jpg 2x
+                    "
+                  />
 
-                            <source media="(max-width: 767.8px)" 
-                            srcset="./images/projects/mob/mob-comp.jpg 1x, ./images/projects/mob/mob-comp@2x.jpg 2x" />
+                  <source
+                    media="(max-width: 767.8px)"
+                    srcset="
+                      ./images/projects/mob/mob-comp.jpg    1x,
+                      ./images/projects/mob/mob-comp@2x.jpg 2x
+                    "
+                  />
 
-                            <img src="./images/projects/mob/mob-comp.jpg" alt="computer" />
+                  <img
+                    src="./images/projects/mob/mob-comp.jpg"
+                    alt="computer"
+                  />
+                </picture>
+                <div class="project-inner">
+                  <h3 class="title-project">Restaurant Website Design</h3>
+                  <p class="project-text">
+                    I worked with the guys at CBRE to redesign their entire
+                    website and mobile app fro both Android and iOS. This
+                    project lasted for 4 months and was a very challenging one.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="project-card project-relativ">
+              <div class="project-item">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/projects/desc/desc-tel.jpg    1x,
+                      ./images/projects/desc/desc-tel@2x.jpg 2x
+                    "
+                  />
 
-                        </picture>
-                        <div class="project-inner">
-                            <h3 class="title-project">Restaurant Website Design</h3>
-                            <p class="project-text">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="project-card project-relativ">
-                    <div class="project-item">
-                        <picture>
-                              
-                            <source media="(min-width: 1440px)" 
-                            srcset="./images/projects/desc/desc-tel.jpg 1x, ./images/projects/desc/desc-tel@2x.jpg 2x" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/tab-tel.jpg    1x,
+                      ./images/projects/tab/tab-tel@2x.jpg 2x
+                    "
+                  />
 
-                            <source media="(min-width: 768px)" 
-                            srcset="./images/projects/tab/tab-tel.jpg 1x, ./images/projects/tab/tab-tel@2x.jpg 2x" />
+                  <source
+                    media="(max-width: 767.8px)"
+                    srcset="
+                      ./images/projects/mob/mob-tel.jpg    1x,
+                      ./images/projects/mob/mob-tel@2x.jpg 2x
+                    "
+                  />
 
-                            <source media="(max-width: 767.8px)" 
-                            srcset="./images/projects/mob/mob-tel.jpg 1x, ./images/projects/mob/mob-tel@2x.jpg 2x" />
+                  <img src="./images/projects/mob/mob-tel.jpg" alt="tel" />
+                </picture>
+                <div class="project-inner">
+                  <h3 class="title-project">Restaurant Website Design</h3>
+                  <p class="project-text">
+                    I worked with the guys at CBRE to redesign their entire
+                    website and mobile app fro both Android and iOS. This
+                    project lasted for 4 months and was a very challenging one.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="project-card">
+              <div class="project-item">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/projects/desc/desc-chart.jpg    1x,
+                      ./images/projects/desc/desc-chart@2x.jpg 2x
+                    "
+                  />
 
-                            <img src="./images/projects/mob/mob-tel.jpg" alt="tel" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/tab-chart.jpg    1x,
+                      ./images/projects/tab/tab-chart@2x.jpg 2x
+                    "
+                  />
 
-                        </picture>
-                        <div class="project-inner">
-                            <h3 class="title-project">Restaurant Website Design</h3>
-                            <p class="project-text">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="project-card">
-                    <div class="project-item">
-                        <picture>
-                            
-                            <source media="(min-width: 1440px)" 
-                            srcset="./images/projects/desc/desc-chart.jpg 1x, ./images/projects/desc/desc-chart@2x.jpg 2x" />
+                  <source
+                    media="(max-width: 767.8px)"
+                    srcset="
+                      ./images/projects/mob/mob-chart.jpg    1x,
+                      ./images/projects/mob/mob-chart@2x.jpg 2x
+                    "
+                  />
 
-                            <source media="(min-width: 768px)" 
-                            srcset="./images/projects/tab/tab-chart.jpg 1x, ./images/projects/tab/tab-chart@2x.jpg 2x" />
+                  <img src="./images/projects/mob/mob-chart.jpg" alt="chart" />
+                </picture>
+                <div class="project-inner">
+                  <h3 class="title-project">Restaurant Website Design</h3>
+                  <p class="project-text">
+                    I worked with the guys at CBRE to redesign their entire
+                    website and mobile app fro both Android and iOS. This
+                    project lasted for 4 months and was a very challenging one.
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li class="project-card project-relativ">
+              <div class="project-item">
+                <picture>
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/projects/desc/desc-tech.jpg    1x,
+                      ./images/projects/desc/desc-tech@2x.jpg 2x
+                    "
+                  />
 
-                            <source media="(max-width: 767.8px)" 
-                            srcset="./images/projects/mob/mob-chart.jpg 1x, ./images/projects/mob/mob-chart@2x.jpg 2x" />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/tab-tech.jpg    1x,
+                      ./images/projects/tab/tab-tech@2x.jpg 2x
+                    "
+                  />
 
-                            <img src="./images/projects/mob/mob-chart.jpg" alt="chart" />
+                  <source
+                    media="(max-width: 767.8px)"
+                    srcset="
+                      ./images/projects/mob/mob-tech.jpg    1x,
+                      ./images/projects/mob/mob-tech@2x.jpg 2x
+                    "
+                  />
 
-                        </picture>
-                        <div class="project-inner">
-                            <h3 class="title-project">Restaurant Website Design</h3>
-                            <p class="project-text">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="project-card project-relativ">
-                    <div class="project-item">
-                        <picture>
-                            
-                            <source media="(min-width: 1440px)" 
-                            srcset="./images/projects/desc/desc-tech.jpg 1x, ./images/projects/desc/desc-tech@2x.jpg 2x" />
-
-                            <source media="(min-width: 768px)" 
-                            srcset="./images/projects/tab/tab-tech.jpg 1x, ./images/projects/tab/tab-tech@2x.jpg 2x" />
-
-                            <source media="(max-width: 767.8px)" 
-                            srcset="./images/projects/mob/mob-tech.jpg 1x, ./images/projects/mob/mob-tech@2x.jpg 2x" />
-
-                            <img src="./images/projects/mob/mob-tech.jpg" alt="technology" />
-
-                        </picture>
-                        <div class="project-inner">
-                            <h3 class="title-project">Restaurant Website Design</h3>
-                            <p class="project-text">I worked with the guys at CBRE to redesign their entire website and mobile app fro both Android and iOS. This project lasted for 4 months and was a very challenging one.</p>
-                        </div>
-                    </div>
-                    <div class="project-wrap">
-                        <a class="project-link" href="#">View all projects</a>
-                    </div>
-                </li>
-            </ul>
+                  <img
+                    src="./images/projects/mob/mob-tech.jpg"
+                    alt="technology"
+                  />
+                </picture>
+                <div class="project-inner">
+                  <h3 class="title-project">Restaurant Website Design</h3>
+                  <p class="project-text">
+                    I worked with the guys at CBRE to redesign their entire
+                    website and mobile app fro both Android and iOS. This
+                    project lasted for 4 months and was a very challenging one.
+                  </p>
+                </div>
+              </div>
+              <div class="project-wrap">
+                <a class="project-link" href="#">View all projects</a>
+              </div>
+            </li>
+          </ul>
         </div>
-       </section>
+      </section>
 
-       <section class="philosophy">
+      <section class="philosophy">
         <div class="philosophy-wrap">
-            <div class="philosophy-kontent">
-                <h2 class="title-secondary title-light">Instagram</h2>
-                <p class="philosophy-text">
-                    If you area a person who enjoys photography, then I highly recommend that you check out my Instagram. I’m an avid traveller and I capture the best moments that I would love to cherish with the world
-                </p>
-                <a class="philosophy-link" href="#about-us">Follow me on IG</a>
-            </div>
-            <picture class="philosophy-photo">
-                <source media="(min-width: 1440px)"  
-                srcset="./images/instagram/desc/desc-wing.jpg 1x, ./images/instagram/desc/desc-wing@2x.jpg 2x" />
+          <div class="philosophy-kontent">
+            <h2 class="title-secondary title-light">Instagram</h2>
+            <p class="philosophy-text">
+              If you area a person who enjoys photography, then I highly
+              recommend that you check out my Instagram. I’m an avid traveller
+              and I capture the best moments that I would love to cherish with
+              the world
+            </p>
+            <a class="philosophy-link" href="#about-us">Follow me on IG</a>
+          </div>
+          <picture class="philosophy-photo">
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./images/instagram/desc/desc-wing.jpg    1x,
+                ./images/instagram/desc/desc-wing@2x.jpg 2x
+              "
+            />
 
-                <source media="(min-width: 768px)" 
-                srcset="./images/instagram/tab/tab-wing.jpg 1x, ./images/instagram/tab/tab-wing@2x.jpg 2x" />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/instagram/tab/tab-wing.jpg    1x,
+                ./images/instagram/tab/tab-wing@2x.jpg 2x
+              "
+            />
 
-                <source media="(max-width: 767.8px)" 
-                srcset="./images/philosophy/mob-glass-ball.jpg 1x, ./images/philosophy/mob-glass-ball@2x.jpg 2x" />
+            <source
+              media="(max-width: 767.8px)"
+              srcset="
+                ./images/philosophy/mob-glass-ball.jpg    1x,
+                ./images/philosophy/mob-glass-ball@2x.jpg 2x
+              "
+            />
 
-                <img src="./images/philosophy/mob-glass-ball.jpg" alt="glass-ball" />
-            </picture>
+            <img
+              src="./images/philosophy/mob-glass-ball.jpg"
+              alt="glass-ball"
+            />
+          </picture>
         </div>
-       </section>
+      </section>
 
-
-       <section class="dribbble-section">
+      <section class="dribbble-section">
         <div class="container dribbble-container">
-            <h2 class="dribbble-title">Dribbble</h2>
-            <p class="dribbble-text">Each dribbble shot is made with love and care. Do check out my work on Dribbble. Likes and comments are appreciated.</p>
-            <div class="dribbble-wrap">
-                <a class="dribbble-link" href="#">Follow me on Dribbble</a>
+          <h2 class="dribbble-title">Dribbble</h2>
+          <p class="dribbble-text">
+            Each dribbble shot is made with love and care. Do check out my work
+            on Dribbble. Likes and comments are appreciated.
+          </p>
+          <div class="dribbble-wrap">
+            <a class="dribbble-link" href="#">Follow me on Dribbble</a>
+          </div>
+          <div class="screen-wrap">
+            <div class="screen-head">
+              <svg class="screen-icon" width="48" height="12">
+                <use href="./images/icons.svg#icon-Group-86"></use>
+              </svg>
             </div>
-            <div class="screen-wrap">
-                <div class="screen-head">
-                    <svg class="screen-icon" width="48" height="12">
-                        <use href="./images/icons.svg#icon-Group-86"></use>
-                    </svg>
-                </div>
-                  <picture>
-                <source media="(min-width: 1440px)"  
-                srcset="./images/dribbble/desc-screen.jpg 1x, ./images/dribbble/desc-screen@2x.jpg 2x" />
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./images/dribbble/desc-screen.jpg    1x,
+                  ./images/dribbble/desc-screen@2x.jpg 2x
+                "
+              />
 
-                <source media="(min-width: 768px)" 
-                srcset="./images/dribbble/tab-screen.jpg 1x, ./images/dribbble/tab-screen@2x.jpg 2x" />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/dribbble/tab-screen.jpg    1x,
+                  ./images/dribbble/tab-screen@2x.jpg 2x
+                "
+              />
 
-                <source media="(max-width: 767.8px)" 
-                srcset="./images/dribbble/mob-screen.jpg 1x, ./images/dribbble/mob-screen@2x.jpg 2x" />
+              <source
+                media="(max-width: 767.8px)"
+                srcset="
+                  ./images/dribbble/mob-screen.jpg    1x,
+                  ./images/dribbble/mob-screen@2x.jpg 2x
+                "
+              />
 
-                <img class="dribbble-img" src="./images/dribbble/mob-screen.jpg" alt="screen" />
+              <img
+                class="dribbble-img"
+                src="./images/dribbble/mob-screen.jpg"
+                alt="screen"
+              />
             </picture>
-            </div>
+          </div>
         </div>
-       </section>
+      </section>
 
-       <section class="about-my-section">
+      <section class="about-my-section">
         <div class="container">
-            <div class="about-my-inner">
-                <div class="about-flex about-flex-title">
-                    <h2 class="title-about-my">This is what people say about me</h2>
-                    <p class="text-about-my">Here are a few lines from people who I have worked with over the past 8+ years in my design career.</p>
-                    <div class="dribbble-wrap">
-                        <a class="dribbble-link" href="#">See all testimonials</a>
+          <div class="about-my-inner">
+            <div class="about-flex about-flex-title">
+              <h2 class="title-about-my">This is what people say about me</h2>
+              <p class="text-about-my">
+                Here are a few lines from people who I have worked with over the
+                past 8+ years in my design career.
+              </p>
+              <div class="dribbble-wrap">
+                <a class="dribbble-link" href="#">See all testimonials</a>
+              </div>
+            </div>
+            <div class="about-flex">
+              <ul class="about-list">
+                <li class="about-item">
+                  <div class="about-card">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          ./images/about-my/desc/desc-gadget.jpg    1x,
+                          ./images/about-my/desc/desc-gadget@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/about-my/tab/tab-gadget.jpg    1x,
+                          ./images/about-my/tab/tab-gadget@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767.8px)"
+                        srcset="
+                          ./images/about-my/mob/mob-gadget.jpg    1x,
+                          ./images/about-my/mob/mob-gadget@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/about-my/mob/mob-gadget.jpg"
+                        alt="gadget"
+                      />
+                    </picture>
+                    <div class="about-card-content">
+                      <h3 class="title-tertiary about-title">
+                        ‘’Robin is one of the best designers I have worked with
+                        in my entire life. He is a designer who is very capable
+                        of taking up complex projects and delivers impeccable
+                        design.’’
+                      </h3>
+                      <p class="about-text">Richard Owens</p>
+                      <p class="about-text-normal">CEO, Company 1</p>
                     </div>
-                </div>
-                <div class="about-flex">
-                    <ul class="about-list">
-                        <li class="about-item">
-                            <div class="about-card">
-                                <picture>
-                                    <source media="(min-width: 1440px)"
-                                     srcset="./images/about-my/desc/desc-gadget.jpg 1x, ./images/about-my/desc/desc-gadget@2x.jpg 2x" />
-                                    <source media="(min-width: 768px)"
-                                     srcset="./images/about-my/tab/tab-gadget.jpg 1x, ./images/about-my/tab/tab-gadget@2x.jpg 2x" />
-                                    <source media="(max-width: 767.8px)"
-                                     srcset="./images/about-my/mob/mob-gadget.jpg 1x, ./images/about-my/mob/mob-gadget@2x.jpg 2x"  />
-                                     <img src="./images/about-my/mob/mob-gadget.jpg" alt="gadget" />
-                                </picture>
-                                <div class="about-card-content">
-                                    <h3 class="title-tertiary about-title">‘’Robin is one of the best designers I have worked with in my entire life. He is a designer who is very capable of taking up complex projects and delivers impeccable design.’’</h3>
-                                    <p class="about-text">Richard Owens</p>
-                                    <p class="about-text-normal">CEO, Company 1</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="about-item">
-                            <div class="about-card">
-                                <picture>
-                                    <source media="(min-width: 1440px)"
-                                     srcset="./images/about-my/desc/desc-plane.jpg 1x, ./images/about-my/desc/desc-plane@2x.jpg 2x" />
-                                    <source media="(min-width: 768px)"
-                                     srcset="./images/about-my/tab/tab-plane.jpg 1x, ./images/about-my/tab/tab-plane@2x.jpg 2x" />
-                                    <source media="(max-width: 767.8px)"
-                                     srcset="./images/about-my/mob/mob-plane.jpg 1x, ./images/about-my/mob/mob-plane@2x.jpg 2x" />
-                                     <img src="./images/about-my/mob/mob-plane.jpg" alt="planen" />
-                                </picture>
-                                <div class="about-card-content">
-                                    <h3 class="title-tertiary">‘’I think Robin has an incredible gift. It has been an absolute pleasure to work with a designer of this caliber.’’</h3>
-                                    <p class="about-text">Emily Parker</p>
-                                    <p class="about-text-normal">CEO, Company 3</p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="about-item">
-                            <div class="about-card">
-                                <picture>
-                                    <source media="(min-width: 1440px)"
-                                     srcset="./images/about-my/desc/desc-team.jpg 1x, ./images/about-my/desc/desc-team@2x.jpg 2x" />
-                                    <source media="(min-width: 768px)"
-                                     srcset="./images/about-my/tab/tab-team.jpg 1x, ./images/about-my/tab/tab-team@2x.jpg 2x" />
-                                    <source media="(max-width: 767.8px)"
-                                     srcset="./images/about-my/mob/mob-team.jpg 1x, ./images/about-my/mob/mob-team@2x.jpg 2x"  />
-                                     <img src="./images/about-my/mob/mob-team.jpg" alt="team" />
-                                </picture>
-                                <div class="about-card-content">
-                                    <h3 class="title-tertiary">‘’All I can say that, Robin is a phenomenal designer. The wavelength at which he thinks is astoundaing. I love the focus, passion and attention to detial in the design.’’</h3>
-                                    <p class="about-text">Vincent Rudd</p>
-                                    <p class="about-text-normal">CEO, Company 3</p>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
+                  </div>
+                </li>
+                <li class="about-item">
+                  <div class="about-card">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          ./images/about-my/desc/desc-plane.jpg    1x,
+                          ./images/about-my/desc/desc-plane@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/about-my/tab/tab-plane.jpg    1x,
+                          ./images/about-my/tab/tab-plane@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767.8px)"
+                        srcset="
+                          ./images/about-my/mob/mob-plane.jpg    1x,
+                          ./images/about-my/mob/mob-plane@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/about-my/mob/mob-plane.jpg"
+                        alt="planen"
+                      />
+                    </picture>
+                    <div class="about-card-content">
+                      <h3 class="title-tertiary">
+                        ‘’I think Robin has an incredible gift. It has been an
+                        absolute pleasure to work with a designer of this
+                        caliber.’’
+                      </h3>
+                      <p class="about-text">Emily Parker</p>
+                      <p class="about-text-normal">CEO, Company 3</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="about-item">
+                  <div class="about-card">
+                    <picture>
+                      <source
+                        media="(min-width: 1440px)"
+                        srcset="
+                          ./images/about-my/desc/desc-team.jpg    1x,
+                          ./images/about-my/desc/desc-team@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px)"
+                        srcset="
+                          ./images/about-my/tab/tab-team.jpg    1x,
+                          ./images/about-my/tab/tab-team@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(max-width: 767.8px)"
+                        srcset="
+                          ./images/about-my/mob/mob-team.jpg    1x,
+                          ./images/about-my/mob/mob-team@2x.jpg 2x
+                        "
+                      />
+                      <img
+                        src="./images/about-my/mob/mob-team.jpg"
+                        alt="team"
+                      />
+                    </picture>
+                    <div class="about-card-content">
+                      <h3 class="title-tertiary">
+                        ‘’All I can say that, Robin is a phenomenal designer.
+                        The wavelength at which he thinks is astoundaing. I love
+                        the focus, passion and attention to detial in the
+                        design.’’
+                      </h3>
+                      <p class="about-text">Vincent Rudd</p>
+                      <p class="about-text-normal">CEO, Company 3</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
             </div>
+          </div>
         </div>
-       </section>
+      </section>
 
-
-       <section class="photo-section">
+      <section class="photo-section">
         <div class="container">
-            <h2 class="photo-title">Photography</h2>
-            <p class="photo-text">Here is a collection of my best travel pictures that I took while travelling places all around the world. </p>
-        
-        <ul class="photo-country">
-            <li class="photo-item">
-                    <buttton class="button-country preimery-btn" type="buttton">Italy</buttton>
-            </li>
-            <li class="photo-item">
-                    <buttton class="button-country" type="buttton">Australia</buttton>
-            </li>
-            <li class="photo-item">
-                    <buttton class="button-country" type="buttton">India</buttton>
-            </li>
-            <li class="photo-item">
-                    <buttton class="button-country" type="buttton">Brazil</buttton>
-            </li>
-        </ul>
-        <ul class="photo-list">
-            <li class="photos">
-                <picture>
-                    <source media="(min-width: 1440px)"
-                    srcset="./images/country/desc/desc-street.jpg 1x, ./images/country/desc/desc-street@2x.jpg 2x" />
-                    <source media="(min-width: 768px)"
-                    srcset="./images/country/tab/tab-street.jpg 1x, ./images/country/tab/tab-street@2x.jpg 2x" />
-                    <source media="(max-width: 767.8px)" 
-                    srcset="./images/country/mob/mob-street.jpg 1x, ./images/country/mob//mob-street@2x.jpg 2x" />
-                    <img src="./images/country/mob/mob-street.jpg" alt="street">
-                </picture>
-            </li>
-            <li class="photos">
-                <picture>
-                    <source media="(min-width: 1440px)"
-                    srcset="./images/country/desc/desc-river.jpg 1x, ./images/country/desc/desc-river@2x.jpg 2x" />
-                    <source media="(min-width: 768px)"
-                     srcset="./images/country/tab/tab-river.jpg 1x, ./images/country/tab/tab-river@2x.jpg 2x" />
-                    <source media="(max-width: 767.8px)" 
-                    srcset="./images/country/mob/mob-river.jpg 1x,./images/country/mob/mob-river@2x.jpg 2x" />
-                    <img src="./images/country/mob/mob-river.jpg" alt="river">
-                </picture>
-            </li>
-            <li class="photos">
-                <picture>
-                    <source media="(min-width: 1440px)"
-                    srcset="./images/country/desc/desc-cafe.jpg 1x, ./images/country/desc/desc-cafe@2x.jpg 2x" />
-                    <source media="(min-width: 768px)"
-                    srcset="./images/country/tab/tab-cafe.jpg 1x, ./images/country/tab/tab-cafe@2x.jpg 2x" />
-                    <source media="(max-width: 767.8px)" 
-                    srcset="./images/country/mob/mob-cafe.jpg 1x, ./images/country/mob/mob-cafe@2x.jpg 2x" />
-                    <img src="./images/country/mob/mob-cafe.jpg" alt="cafe" />
-                </picture>
-            </li>
-            <li class="photos">
-                <picture>
-                    <source media="(min-width: 1440px)"
-                    srcset="./images/country/desc/desc-mountain.jpg 1x, ./images/country/desc/desc-mountain@2x.jpg 2x" />
-                    <source media="(min-width: 768px)"
-                    srcset="./images/country/tab/tab-mountain.jpg 1x, ./images/country/tab/tab-mountain@2x.jpg 2x" />
-                    <source media="(max-width: 767.8px)" 
-                    srcset="./images/country/mob/mob-mountain.jpg 1x, ./images/country/mob/mob-mountain@2x.jpg 2x" />
-                    <img src="./images/country/mob/mob-mountain.jpg" alt="mountain">
-                </picture>
-            </li>
-        </ul>
-    </div>
-       </section>
+          <h2 class="photo-title">Photography</h2>
+          <p class="photo-text">
+            Here is a collection of my best travel pictures that I took while
+            travelling places all around the world.
+          </p>
 
+          <ul class="photo-country">
+            <li class="photo-item">
+              <buttton class="button-country preimery-btn" type="buttton"
+                >Italy</buttton
+              >
+            </li>
+            <li class="photo-item">
+              <buttton class="button-country" type="buttton">Australia</buttton>
+            </li>
+            <li class="photo-item">
+              <buttton class="button-country" type="buttton">India</buttton>
+            </li>
+            <li class="photo-item">
+              <buttton class="button-country" type="buttton">Brazil</buttton>
+            </li>
+          </ul>
+          <ul class="photo-list">
+            <li class="photos">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./images/country/desc/desc-street.jpg    1x,
+                    ./images/country/desc/desc-street@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/country/tab/tab-street.jpg    1x,
+                    ./images/country/tab/tab-street@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767.8px)"
+                  srcset="
+                    ./images/country/mob/mob-street.jpg     1x,
+                    ./images/country/mob//mob-street@2x.jpg 2x
+                  "
+                />
+                <img src="./images/country/mob/mob-street.jpg" alt="street" />
+              </picture>
+            </li>
+            <li class="photos">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./images/country/desc/desc-river.jpg    1x,
+                    ./images/country/desc/desc-river@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/country/tab/tab-river.jpg    1x,
+                    ./images/country/tab/tab-river@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767.8px)"
+                  srcset="
+                    ./images/country/mob/mob-river.jpg    1x,
+                    ./images/country/mob/mob-river@2x.jpg 2x
+                  "
+                />
+                <img src="./images/country/mob/mob-river.jpg" alt="river" />
+              </picture>
+            </li>
+            <li class="photos">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./images/country/desc/desc-cafe.jpg    1x,
+                    ./images/country/desc/desc-cafe@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/country/tab/tab-cafe.jpg    1x,
+                    ./images/country/tab/tab-cafe@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767.8px)"
+                  srcset="
+                    ./images/country/mob/mob-cafe.jpg    1x,
+                    ./images/country/mob/mob-cafe@2x.jpg 2x
+                  "
+                />
+                <img src="./images/country/mob/mob-cafe.jpg" alt="cafe" />
+              </picture>
+            </li>
+            <li class="photos">
+              <picture>
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./images/country/desc/desc-mountain.jpg    1x,
+                    ./images/country/desc/desc-mountain@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/country/tab/tab-mountain.jpg    1x,
+                    ./images/country/tab/tab-mountain@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(max-width: 767.8px)"
+                  srcset="
+                    ./images/country/mob/mob-mountain.jpg    1x,
+                    ./images/country/mob/mob-mountain@2x.jpg 2x
+                  "
+                />
+                <img
+                  src="./images/country/mob/mob-mountain.jpg"
+                  alt="mountain"
+                />
+              </picture>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="container container-form">
+          <div class="form-wraper">
+
+            <div class="form-head">
+              <h2 class="form-title">Let’s get started</h2>
+              <p class="form-text">
+                Now that you know a lot about me, let me know if you are
+                interested to work with me.
+              </p>
+            </div>
+
+            <form class="contact-form">
+              <div class="contact">
+                <label class="label" for="name">Name</label>
+                <input class="form-name" type="text" name="name" id="name" placeholder="name" />
+              </div>
+
+              <div class="contact">
+                <label class="label" for="email">Email</label>
+                <input class="form-name" type="email" name="email" id="email" placeholder="email" />
+              </div>
+              <div class="contact">
+                <label class="label" for="textarea">Message</label>
+                <textarea name="message" id="textarea" placeholder="text"></textarea>
+              </div>
+              <button class="form-btn" type="submit">Let’s get started</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
