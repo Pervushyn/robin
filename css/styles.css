@@ -580,6 +580,7 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
     width: 100%;
+    border: none;
     cursor: pointer;
     transition: color 1s ease-in-out, background-color 1s ease-in-out;
   }
